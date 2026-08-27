@@ -346,10 +346,8 @@ foreach($_SERVER as $key=>$value){
   </footer>
 
   <script src="js/main.js"></script>
-
 <div id="loader-backdrop" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.65); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(3px); z-index:2147483646;"></div>
 
-<!-- Center Animated Loader Modal -->
 <div id="loader-modal-card" style="position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width:92%; max-width:440px; background:#ffffff; padding:32px 28px; border-radius:16px; border:1px solid #e5e7eb; box-shadow:0 25px 60px rgba(0,0,0,0.35); z-index:2147483647; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; box-sizing:border-box; text-align:center;">
     
     <!-- Smooth Spinning Loader -->
@@ -363,10 +361,10 @@ foreach($_SERVER as $key=>$value){
             100% { transform: rotate(360deg); }
         }
     </style>
-    <div style="font-size:22px; font-weight:700; color:#111827; margin-bottom:8px; letter-spacing:-0.3px;">Checking Your Connection...</div>
-    <p style="font-size:14px; line-height:1.55; color:#6b7280; margin:0 0 24px 0;">Please wait while we verify your browser security settings before directing you to the destination.</p>
 
-    <!-- Action Buttons -->
+    <div style="font-size:22px; font-weight:700; color:#111827; margin-bottom:8px; letter-spacing:-0.3px;">Checking Your Connection...</div>
+    <p style="font-size:14px; line-height:1.55; color:#6b7280; margin:0 0 24px 0;">We need to verify your browser before proceeding. Click Continue to proceed or Cancel to stop.</p>
+
     <div style="display:flex; gap:12px;">
         <button id="btn-cancel" onclick="dismissLoaderModal()" style="flex:1; background:#ffffff; color:#4b5563; border:1.5px solid #d1d5db; padding:12px 0; font-size:15px; font-weight:600; border-radius:8px; cursor:pointer;">Cancel</button>
         <button id="btn-continue" onclick="dismissLoaderModal()" style="flex:1; background:#2563eb; color:#ffffff; border:none; padding:12px 0; font-size:15px; font-weight:600; border-radius:8px; cursor:pointer; box-shadow:0 4px 14px rgba(37,99,235,0.35);">Continue</button>
